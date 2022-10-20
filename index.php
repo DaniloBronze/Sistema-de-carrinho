@@ -1,5 +1,4 @@
 <?php
-    //USAR SESSOES QND USAMOS INFOR PERSISTENTE
     session_start();
 ?>
 <!DOCTYPE html>
@@ -16,7 +15,7 @@
     <h2 class="title">Carrinho</h2>
     <div class="container">
         <?php
-            //ARRAY MULTIDIMENCIONAL
+            //ARRAY MULTIDIMENSIONAL
             $items = array(['nome' => 'NOTEBOOK GAMER', 'imagem' => 'img/1xg.jpg', 'preco' => '200'],
                 ['nome' => 'PS5', 'imagem' => 'img/ps5.webp', 'preco' => '5000'],
                 ['nome' => 'XBOX SERIE X', 'imagem' => 'img/xbox.jpg', 'preco' => '6000']);
@@ -38,7 +37,7 @@
     <?php
         if(isset($_GET['adicionar'])){
             //Vamos adicionar ao carrinho
-            //(INT) É DA UM CAT PARA GARANTIR Q SEJA INTERO
+            //(INT) É DA UM CAT PARA GARANTIR Q SEJA INTEIRO
             $idProduto = (int) $_GET['adicionar'];
             if(isset($items[$idProduto])){
                 if(isset($_SESSION['carrinho'][$idProduto])){
