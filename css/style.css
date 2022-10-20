@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+.add{
+    color: white;
+}
+
+.title{
+    color: white;
+    width: 100%;
+    background-color: #069;
+    text-align: center;
+    padding: 10px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+    display: flex;
+    /* flex-direction: row; 
+    flex-wrap: nowrap;
+    justify-content: space-around;
+       */
+    margin-bottom: 20px;
+}
+
+.produto{
+    width: 33.3%;
+    padding: 0 30px;
+}
+
+.produto img{
+    width: 100%;
+    max-width: 80%;
+    border-radius: 50%;
+    margin:0 0 10px 30px;
+}
+
+.produto a{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #5fb382;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #364b3f;
+}
+
+
+.produto a:hover{
+    transform: scale(1.03);
+    transition: .3s;
+}
+
+.carrinho-item{
+    width: 100%;
+    max-width: 1280px;
+    margin: 10px auto;
+}
+
+.carrinho-item p{
+    font-size: 13px;
+    color: gray;
+    padding-bottom: 10px;
+    border-bottom: 2px dotted #ccc;
+}
